@@ -58,11 +58,12 @@ void mostrarCatalogo(Libro* catalogo, int nLibros) {
     }
 }
 
-//Se añaden 7 libros, se eliminan 3 y se actualiza el catalogo
+//Puntero
 int main() {
     Libro* catalogo = NULL; 
     int nLibros = 0; 
 
+    //Anadir 7 libros con Titulo, Autor, Año de publicacion y disponibilidad
     agregarLibro(&catalogo, &nLibros, "Cien Años de Soledad", "Gabriel Garcia Marquez", 1967, true);
     agregarLibro(&catalogo, &nLibros, "El Principito", "Antoine de Saint-Exupéry", 1943, true);
     agregarLibro(&catalogo, &nLibros, "1984", "George Orwell", 1949, false);
@@ -71,10 +72,12 @@ int main() {
     agregarLibro(&catalogo, &nLibros, "Ulises", "James Joyce", 1922, false);
     agregarLibro(&catalogo, &nLibros, "La Odisea", "Homero", -800, true);
 
+    //Eliminar 3 libros por Titulo
     eliminarLibro(&catalogo, &nLibros, "1984");
     eliminarLibro(&catalogo, &nLibros, "Ulises");
     eliminarLibro(&catalogo, &nLibros, "La Odisea");
 
+    //Mostrar el catalogo actualizado
     mostrarCatalogo(catalogo, nLibros);
 
     // Liberar la memoria
