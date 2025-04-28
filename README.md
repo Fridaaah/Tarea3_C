@@ -35,7 +35,7 @@ Este programa permite gestionar un catálogo de libros en una biblioteca, agrega
 - Asegúrate de ingresar correctamente los títulos al eliminar libros.
 - El programa utiliza memoria dinámica, por lo que manejará eficientemente el crecimiento o reducción del catálogo.
 
-# Ejercicio7.c | Sistema de Gestión de Catálogo de Libros
+# Ejercicio7.c | Sistema de Gestión de Pacientes de hospital
 
 Este programa permite agregar y eliminar pacientes de un hospital con llamadas de función desde main
 
